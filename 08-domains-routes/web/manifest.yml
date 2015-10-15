@@ -1,0 +1,5 @@
+name: cf-hero
+memory: 32M
+disk_quota: 128M
+no-hostname: true
+domain: gerhard.cf-hero.cloudcredo.io

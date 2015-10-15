@@ -1,0 +1,33 @@
+Getting services from marketplace in org cf-z2h / space development as gerhard@lazu.co.uk...
+OK
+
+service          plans                                                                                description   
+3scale           free_appdirect, basic_appdirect*, pro_appdirect*                                     API Management Platform   
+blazemeter       free-tier, basic1kmr*, pro5kmr*, pp10kmr*                                            The JMeter Load Testing Cloud   
+cedexisopenmix   opx_global*, openmix-gslb-with-fusion-feeds*                                         Openmix Global Cloud &amp; Data Center Load Balancer   
+cedexisradar     free-community-edition                                                               Free Website&amp; Mobile App Performance Reports   
+cleardb          spark, boost*, amp*, shock*                                                          Highly available MySQL for your Apps.   
+cloudamqp        lemur, tiger*, bunny*, rabbit*, panda*                                               Managed HA RabbitMQ servers in the cloud   
+cloudforge       free, standard*, pro*                                                                Development Tools In The Cloud   
+elephantsql      turtle, panda*, hippo*, elephant*                                                    PostgreSQL as a Service   
+flashreport      trial, basic*, silver*, gold*, platinum*                                             Generate PDF from your data   
+ironmq           pro_platinum*, free, pro_gold*, large*, medium*, small*, pro_silver*                 Powerful Durable Message Queueing Service   
+ironworker       large*, pro_gold*, pro_platinum*, pro_silver*, small*, medium*, free                 Scalable Background and Async Processing   
+loadimpact       lifree, li100*, li500*, li1000*                                                      Automated and on-demand performance testing   
+memcachedcloud   100mb*, 250mb*, 500mb*, 1gb*, 2-5gb*, 5gb*, 30mb                                     Enterprise-Class Memcached for Developers   
+memcachier       dev, 100*, 250*, 500*, 1000*, 2000*, 5000*, 7500*, 10000*, 20000*, 50000*, 100000*   The easiest, most advanced memcache.   
+mongolab         sandbox                                                                              Fully-managed MongoDB-as-a-Service   
+newrelic         standard                                                                             Manage and monitor your apps   
+pubnub           free                                                                                 Build Realtime Apps that Scale   
+redis            dedicated-vm                                                                         Redis service to provide a key-value store   
+rediscloud       100mb*, 250mb*, 500mb*, 1gb*, 2-5gb*, 5gb*, 10gb*, 50gb*, 30mb                       Enterprise-Class Redis for Developers   
+searchify        small*, plus*, pro*                                                                  Custom search you control   
+searchly         small*, micro*, professional*, advanced*, starter, business*, enterprise*            Search Made Simple. Powered-by Elasticsearch   
+sendgrid         free, bronze*, silver*                                                               Email Delivery. Simplified.   
+stamplay         plus*, premium*, core, starter*                                                      API-first development platform   
+statica          starter, spike*, micro*, medium*, large*, enterprise*, premium*                      Enterprise Static IP Addresses   
+temporize        small*, medium*, large*                                                              Simple and flexible job scheduling for your application   
+
+* These service plans have an associated cost. Creating a service instance will incur this cost.
+
+TIP:  Use 'cf marketplace -s SERVICE' to view descriptions of individual plans of a given service.

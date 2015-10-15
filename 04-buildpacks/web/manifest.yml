@@ -1,0 +1,4 @@
+name: static-app
+memory: 8M
+disk_quota: 16M
+random-route: true

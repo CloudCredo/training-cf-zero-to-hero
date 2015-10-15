@@ -1,0 +1,40 @@
+.superhero {
+  font-size: 125%;
+}
+
+.superhero header,
+.superhero div.alt.container {
+  display: none;
+}
+
+.superhero .super {
+  display: block;
+}
+.superhero span.super {
+  display: inline;
+}
+
+.superhero .hero,
+.super {
+  display: none;
+}
+
+.superhero #header {
+  background-image: none;
+  padding: 5em 0 0 0;
+  background: #FFF;
+}
+.superhero #header::after {
+  background: #FFF;
+}
+.superhero #header h3 {
+  color: #6e6e6e;
+}
+.superhero #header h1,
+.superhero h3 {
+  color: #4eb980;
+}
+
+.superhero #main {
+  padding: 0 0 5em 0;
+}

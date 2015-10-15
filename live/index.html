@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Cloud Foundry for Beginners: from Zero to Hero</title>
+
+		<meta name="description" content="Cloud Foundry for Beginners: from Zero to Hero">
+		<meta name="author" content="Copyright CloudCredo Ltd 2015">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+
+    <body>
+    <div class="reveal">
+      <div id="slides" class="slides">
+        <!-- Add slides using the addSlide function below to save on boilerplate -->
+      </div>
+    </div>
+
+    <script>
+      function addSlide(slidePath) {
+        var slideNode = document.createElement("section");
+        slideNode.setAttribute("data-markdown", slidePath);
+        slideNode.setAttribute("data-separator", "^---");
+        slideNode.setAttribute("data-separator-notes", "^Note:");
+        slideNode.setAttribute("data-charset", "iso-8859-15");
+
+        var slidesContainer = document.getElementById("slides");
+        slidesContainer.appendChild(slideNode);
+      }
+
+      addSlide("./slides.md");
+    </script>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+	</body>
+</html>

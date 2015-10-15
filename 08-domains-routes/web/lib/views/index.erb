@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    <title>Cloud Foundry <%= "Super" if ENV.has_key?("SUPERHERO") %>Hero wanted by Cloud Credo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+  <body class="<%= "superhero" if ENV.has_key?("SUPERHERO") %>">
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane-o"></span>
+        <h1><span class="hero"><%= name %>,</span> Cloud Foundry <span class="super">Super</span>Hero</h1>
+        <h3 class="hero">You are ready</h3>
+        <h3 class="super">We are ready</h3>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container 75%">
+          <h2>
+            Experiment with no fear,
+            <br />Cloud Foundry has your back.
+          </h2>
+				</header>
+
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="https://docs.cloudfoundry.org/devguide/deploy-apps/cf-scale.html" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Scale your apps instantly</h3>
+              <p>Scale instantly for the best user experience.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="https://docs.cloudfoundry.org/buildpacks/" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Use any language</h3>
+							<p>Use the programming language that you know best. Experiment with new languages easily.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="http://www.cloudcredo.com/the-cloudcredo-way/" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Respond to users quickly</h3>
+							<p>Learn what works for your users and respond to their needs quickly, with minimal effort.</p>
+						</div>
+					</section>
+				</div>
+
+				<footer class="hero major container 75%">
+					<h3>Cloud Credo: Business value delivered instantly</h3>
+          <p>
+            When you need the eXtreme Programming and Cloud Foundry experts working with you on real-world problems, we are here.
+            We have been deploying, running &amp; customising Cloud Foundry for years, let us show you what a difference we make.
+          </p>
+				</footer>
+
+				<footer class="super major container 75%">
+          <p>If you have been programming for the past couple of years and are interested in the Cloud Foundry ecosystem, we want to hear from you.</p>
+          <p>
+            We code primarily in Ruby &amp; Go, but to be honest, language doesn't matter. We only care about simple code communicated well.
+            We believe that the best code gets written in pairs, starting with tests that make good design evolve.
+          </p>
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container 75%">
+
+					<ul class="icons">
+						<li><a href="http://www.cloudcredo.com/" class="icon fa-cloud"><span class="label">Cloud Credo</span></a></li>
+						<li><a href="https://twitter.com/cloudcredo" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/company/cloudcredo" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/cloudcredo" class="icon fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+            <li>&copy; <%= Time.now.year %> Part of Cloud Credo CF Training material.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

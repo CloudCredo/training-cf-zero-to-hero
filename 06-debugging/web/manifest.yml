@@ -1,0 +1,4 @@
+name: debug-app
+memory: 64M
+disk_quota: 128M
+random-route: true

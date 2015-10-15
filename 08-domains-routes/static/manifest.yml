@@ -1,0 +1,7 @@
+name: cf-hero-certificate
+memory: 8M
+disk_quota: 16M
+instances: 3
+no-hostname: true
+buildpack: staticfile_buildpack
+# domain: YOUR-NAME.cf-hero.cloudcredo.io

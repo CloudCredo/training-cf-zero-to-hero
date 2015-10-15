@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+[ -z "$DEBUG" ] || set -x
+
+npm install -g reveal-md

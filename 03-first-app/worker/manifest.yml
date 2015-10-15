@@ -1,0 +1,6 @@
+name: worker-app
+command: ./work
+buildpack: binary_buildpack
+memory: 2M
+disk_quota: 1M
+no-route: true

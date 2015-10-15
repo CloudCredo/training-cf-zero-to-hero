@@ -1,0 +1,6 @@
+inherit: manifest.yml
+name: cf-superhero
+no-hostname: false
+host: super
+env:
+  SUPERHERO: true

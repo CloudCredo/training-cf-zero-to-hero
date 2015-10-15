@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+[ -z "$DEBUG" ] || set -x
+
+topic="${1:-01-what-is-cf/}"
+
+if ! [ -d "$topic" ]
+then
+  echo "Topic $topic dir does not exist"
+  exit 1
+fi
+
+reveal-md "${topic}slides.md"
