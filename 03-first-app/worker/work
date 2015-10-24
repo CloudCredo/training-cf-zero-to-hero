@@ -1,8 +1,17 @@
 #!/bin/sh -ex
 
-# Let's find the public IP of the app host that I'm running on
-! which curl >/dev/null || curl -sL "https://api.ipify.org?format=json" | tee ip.json
+main() {
+  find_my_public_ip
+  suspend_myself
+}
 
-# I will put myself in a suspended state,
-# otherwise HM9K will think I've crashed.
-kill -STOP $$
+find_my_public_ip() {
+  ! which curl >/dev/null ||
+    curl -sL "https://api.ipify.org?format=json" -w "\n"
+}
+
+suspend_myself() {
+  kill -STOP $$
+}
+
+main
