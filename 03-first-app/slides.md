@@ -46,7 +46,7 @@ Note:
 $ cf apps
 
 name      state     instances   memory   disk   urls
-web-app   started   1/1         32M      128M   web-app-uninterch...
+web-app   started   1/1         32M      256M   web-app-uninterch...
 ```
 
 ---
@@ -65,7 +65,7 @@ stack: cflinuxfs2
 buildpack: ruby 1.6.7
 
      state     since        cpu    memory         disk
-#0   running   2015-11-02   0.0%   25.7M of 32M   71.6M of 128M
+#0   running   2015-11-02   0.0%   25.7M of 32M   95.1M of 256M
 ```
 
 ---
@@ -77,8 +77,9 @@ $ cat 03-first-app/web/manifest.yml
 
 name: web-app
 memory: 32M
-disk_quota: 128M
+disk_quota: 256M
 random-route: true
+buildpack: ruby_buildpack
 ```
 
 ---
@@ -95,7 +96,7 @@ random-route: true
 `cfapps.io` is shared by all CF [run.pivotal.io](https://run.pivotal.io/) apps
 
 ```bash
-$ cf app first-app
+$ cf app web-app
 
 ...
 
@@ -128,7 +129,7 @@ urls: web-app-uninterchangeable-enrichment.cfapps.io
 ```
 
 Note:
-  On an app host, also known as a DEA (CF v2) or a Cell( CF v3)
+  On an app host, also known as a DEA (CF v2) or a CELL (CF v3)
 
   The router sends traffic to the IP & port combination that match the Host header
 
@@ -195,7 +196,9 @@ Randomly distributed across multiple app instances
 ```bash
 # From the training home directory:
 $ cd 03-first-app/worker
-$ cf push
+$ cf push --no-start
+$ cf set-health-check worker-app none # disable Diego health-check
+$ cf start worker-app
 ```
 
 ```bash
@@ -203,14 +206,14 @@ $ cf app worker-app
 
 requested state: started
 instances: 1/1
-usage: 2M x 1 instances
+usage: 16M x 1 instances
 urls:
 last uploaded: Mon Nov 2 13:56:39 UTC 2015
 stack: cflinuxfs2
 buildpack: binary_buildpack
 
-     state     since        cpu    memory       disk
-#0   running   2015-11-02   0.0%   412K of 2M   48K of 1M
+     state     since        cpu    memory         disk
+#0   running   2015-11-02   0.0%   10.7M of 16M   27.3M of 64M
 ```
 
 ---
@@ -221,25 +224,18 @@ buildpack: binary_buildpack
 $ cf logs worker-app --recent
 
 ...
-2015-11.. [App/0] ERR + curl -sL https://api.ipify.org?format=json
-2015-11.. [App/0] ERR + tee ip.json
-2015-11.. [App/0] ERR + kill -STOP 29
-2015-11.. [App/0] OUT {"ip":"54.208.167.186"}
+2015... [App/0] ERR + main
+2015... [App/0] ERR + find_my_public_ip
+2015... [App/0] ERR + which curl
+2015... [App/0] ERR + curl -sL https://api.ipify.org?format=json
+2015... [App/0] OUT {"ip":"54.236.219.204"}
+2015... [App/0] ERR + suspend_myself
+2015... [App/0] ERR + kill -STOP 11
 ```
 
-  * Finds the public IP of the app host
-  * Writes it to STDOUT &amp; file
+  * Finds the public IP of the gateway host
+  * Writes it to STDOUT
   * Suspends itself
-
----
-
-## [How can I](#/16) get the file [that the worker app wrote?](#/16)
-
-```bash
-$ cf files worker-app app/ip.json
-
-{"ip":"54.208.167.186"}
-```
 
 ---
 
@@ -253,7 +249,7 @@ So that the whole world can see it
 
 ---
 
-## Make room [for better apps](#/18)
+## Make room [for better apps](#/17)
 
 ```bash
 $ cf delete worker-app
@@ -265,7 +261,7 @@ $ cf delete -f -r web-app
 
 ---
 
-## [Any](#/19) questions?
+## [Any](#/18) questions?
 
 > Questions cannot be stupid. Answers can.
 
@@ -273,17 +269,9 @@ $ cf delete -f -r web-app
 
 # CF SUPERHERO
 
+  * Debug `cf` commands with [`CF_TRACE=true`](https://docs.cloudfoundry.org/devguide/deploy-apps/troubleshoot-app-health.html#trace)
   * Create your own [`manifest.yml`](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html)
   * Learn about [pushing WAR files](https://docs.cloudfoundry.org/buildpacks/java/java-tips.html)
-  * Debug `cf` commands with [`CF_TRACE=true`](https://docs.cloudfoundry.org/devguide/deploy-apps/troubleshoot-app-health.html#trace)
-  * Run web app on the next generation CF runtime, [Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html)
-
-```bash
-$ cf install-plugin -r CF-Community Diego-Beta
-$ cf push web-app-diego --no-start
-$ cf enable-diego web-app-diego
-$ cf start web-app-diego
-```
 
 <p style="font-size: 50%; opacity: 0.2;">
   This content is copyright of CloudCredo. &copy; CloudCredo 2015. All rights reserved.
