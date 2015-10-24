@@ -132,8 +132,8 @@ $ cf push
 ```bash
 $ cf app static-app
 
-     state     since        cpu    memory       disk
-#0   running   2015-11-02   0.0%   3.5M of 8M   6.6M of 16M
+     state     since        cpu    memory        disk
+#0   running   2015-11-02   0.0%   6.5M of 16M   33.6M of 64M
 ```
 
 <img src="images/index.png" style="background:none; border:none; box-shadow:none;" />
@@ -149,13 +149,13 @@ $ cf scale static-app -i 64
 ```bash
 $ cf app static-app
 
-     state     since        cpu    memory       disk
-#0   running   2015-11-02   0.0%   3.5M of 8M   6.6M of 16M
-#1   down      2015-11-02   0.0%   0 of 0       0 of 0
-#2   running   2015-11-02   0.0%   4M of 8M     6.6M of 16M
+     state      since        cpu    memory        disk
+#0   running    2015-11-02   0.0%   6.5M of 16M   33.6M of 64M
+#1   starting   2015-11-02   0.0%   0 of  16M     0 of 64M
+#2   running    2015-11-02   0.0%   6.9M of 16M   33.5M of 64M
 ...
-#62  running   2015-11-02   0.0%   3.8M of 8M   6.6M of 16M
-#63  running   2015-11-02   0.0%   4.1M of 8M   6.6M of 16M
+#62   running   2015-11-02   0.0%   6.8M of 16M   33.5M of 64M
+#63   running   2015-11-02   0.0%   7M of 16M     33.6M of 64M
 ```
 
 ---
