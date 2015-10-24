@@ -1,4 +1,5 @@
 name: imperfect-app
+memory: 64M
+disk_quota: 256M
 random-route: true
-memory: 32M
-disk_quota: 128M
+buildpack: ruby_buildpack

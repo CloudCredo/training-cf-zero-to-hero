@@ -53,6 +53,9 @@ Like all apps, it's good enough (not perfect)
 
 > _Version 1 Sucks, But Ship It Anyway_
 
+Note:
+  [Coding Horror wisdom](http://blog.codinghorror.com/version-1-sucks-but-ship-it-anyway/)
+
 ---
 
 ## [How to make an <br />imperfect app](#/5) resilient[?](#/5)
@@ -64,7 +67,7 @@ $ cf scale imperfect-app -i 3
 $ cf apps
 
 name            state     instances   memory   disk   urls
-imperfect-app   started   2/3         32M      128M   imperfect..
+imperfect-app   started   2/3         64M      256M   imperfect..
 ```
 
 ```bash
@@ -101,7 +104,7 @@ $ cf app imperfect-app
 
 ## [What](#/7) restarts [crashed apps?](#/7)
 
-Health Manager (a.k.a. [HM9K](https://docs.cloudfoundry.org/concepts/architecture/#hm9k))
+Health Check in Diego, Health Manager in DEA (a.k.a. [HM9K](https://docs.cloudfoundry.org/concepts/architecture/#hm9k))
 
 Note:
   When an app instance crashes, the Health Manager dubbed HM9K will notice this and restart the app instance
@@ -115,12 +118,12 @@ Generous grace period if it exceeds the memory quota
 ```bash
 $ cf events imperfect-app
 
-.. description
-.. index: 1, reason: CRASHED, exit_description: out of memory, ..
+description
+index: 1, reason: CRASHED... Exited with status 255 (out of memory)
 ```
 
 ```bash
-$ cf scale imperfect-app -m 64M
+$ cf scale imperfect-app -m 256M
 ```
 
 <img src="images/fill-memory.png" style="background:none; border:none; box-shadow:none;" />
@@ -134,8 +137,10 @@ $ cf scale imperfect-app -m 64M
 ```bash
 $ cf app imperfect-app
 
-     state     since       cpu   memory         disk
-#0   running   2015-11-02  0.0%  63.6M of 64M   128M of 128M
+     state     since        cpu    memory           disk
+#0   running   2015-11-02   0.0%   24.4M  of 256M   95.2M  of 256M
+#1   running   2015-11-02   0.0%   112.4M of 256M   224.2M of 256M
+#0   running   2015-11-02   0.0%   24.3M  of 256M   95.2M  of 256M
 ```
 
 ```bash
