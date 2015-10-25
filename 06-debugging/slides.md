@@ -41,8 +41,11 @@ urls: debug-app-unlanterned-eliminant.cfapps.io
 
 1. App logs
 1. App events
-1. SSH access
 1. Buildpack support
+1. SSH access*
+
+Note:
+  Diego SSH not fully integrated into PWS
 
 ---
 
@@ -53,8 +56,8 @@ $ cf logs debug-app --recent
 
 ...
 
-... [App/0] ERR  ...  - RuntimeError - I am a bug, fix me:
-... [App/0] ERR  /home/vcap/app/config.ru:9:in `block in <class:Web>
+... [App/0] ERR ...  - RuntimeError - I am a bug, fix me:
+... [App/0] ERR /home/vcap/app/config.ru:20:in `block in <class:Web>
 ```
 
 ```bash
@@ -82,9 +85,7 @@ $ cf restart debug-app
 $ cf events debug-app
 
 ... description
-... index: 0, reason: CRASHED, exit_description: app instance exit..
-... state: STARTED
-... state: STOPPED
+... index: 0, reason: CRASHED, exit_description: 2 error(s) ...
 ...
 ```
 
@@ -95,52 +96,16 @@ Note:
 
 ---
 
-## 3. SSH [access](#/7)
-
-Install the Console cf cli plugin
-
-```bash
-$ cf install-plugin -r CF-Community Console
-$ cf console debug-app
-$ cf logs debug-app --recent
-...
-
-# The last line in the log output has the SSH user & host
-2015-11-02 [App/1] OUT RANDOM-USER@ln1.tmate.io
-```
-
-> Native SSH access in Diego
-
----
-
-## 3. SSH [access](#/8)
-
-```bash
-$ ssh RANDOM-USER@ln1.tmate.io
-$ pstree -pan
-$ top # another favourite
-```
-
-<img src="images/pstree.png" style="background:none; border:none; box-shadow:none;" />
-
-```bash
-# CTRL + B + D to exit
-```
-
----
-
-## 4. [Buildpack support](#/9)
+## 3. [Buildpack support](#/7)
 
 * New Relic
 * AppDynamics
 
-> Best for Java apps
+> Included in Java buildpack
 
 ---
 
-## New Relic [without <br />buildpack support](#/10)
-
-Create a New Relic service instance
+## New Relic [without <br />buildpack support](#/8)
 
 ```bash
 $ cf create-service newrelic standard newrelic
@@ -148,8 +113,6 @@ $ cf bind-service debug-app newrelic
 $ cf env debug-app
 # Find your New Relic license key
 ```
-
-Provide app with New Relic license key
 
 ```bash
 # From the training home directory:
@@ -162,11 +125,26 @@ $ vim newrelic.yml
 $ cf push
 ```
 
-Find New Relic Dashboard URL
-
 ```bash
 $ cf service newrelic
 ```
+
+https://loadimpact.com/
+
+Note:
+  Create a New Relic service instance
+
+  Provide app with New Relic license key
+
+  Find New Relic Dashboard URL
+
+  Generate some load via LoadImpact
+
+---
+
+## 4. SSH [access](#/9)
+
+> Not fully integrated into PWS yet
 
 ---
 
