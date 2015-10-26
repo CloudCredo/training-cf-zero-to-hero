@@ -121,9 +121,7 @@ $ cf scale stateful-app -i 2
 
 ```bash
 $ cf env stateful-app
-
 ...
-
  "VCAP_SERVICES": {
   "rediscloud": [
    {
@@ -132,7 +130,6 @@ $ cf env stateful-app
      "password": "PASSWORD",
      "port": "15708"
     },
-
 ...
 ```
 
