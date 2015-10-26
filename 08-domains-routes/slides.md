@@ -12,7 +12,7 @@ Note:
 
 ---
 
-## [Cloud Foundry Hero](#/2) Certificate
+## [Cloud Foundry Hero](#/2) App
 
 > Outstanding Cloud Foundry Knowledge
 
@@ -27,7 +27,7 @@ Note:
 ```nohighlight
 As a CF hero
 I want my app to be accessible at my domain
-So that everyone can see my Cloud Foundry Hero Certificate
+So that everyone can see my Cloud Foundry Hero App
 ```
 
 ---
@@ -155,7 +155,7 @@ $ cf delete -f -r cf-superhero
 
 ```bash
 # From the training home directory:
-$ cd 08-domains-routes/static
+$ cd 08-domains-routes/web2
 # Replace YOUR-NAME
 $ vim public/index.html
 # Uncomment domain & replace YOUR-NAME
@@ -164,12 +164,12 @@ $ vim manifest.yml
 
 ```bash
 $ cf push
-$ cf app cf-hero-certificate
+$ cf app cf-hero2
 
-     state     since        cpu    memory       disk
-#0   running   2015-11-02   0.0%   3.8M of 8M   6.5M of 16M
-#1   running   2015-11-02   0.0%   4.1M of 8M   6.5M of 16M
-#2   running   2015-11-02   0.0%   4.2M of 8M   6.5M of 16M
+     state     since        cpu    memory        disk
+#0   running   2015-11-02   0.0%   6.8M of 16M   33.6M of 64M
+...
+#3   running   2015-11-02   0.0%   6.7M of 16M   33.5M of 64M
 ```
 
 ```bash
@@ -180,11 +180,11 @@ $ cf delete -f cf-hero
 
 ---
 
-## [Tweet &amp; claim your](#/9) <br />Cloud Foundry Hero Certificate
+## [You are now a](#/9) <br />Cloud Foundry Hero
 
 <br />
 
-<img src="images/cf-hero-certificate.png" style="background:none; border:none; box-shadow:none;" />
+<img src="images/cf-hero2.png" style="background:none; border:none; box-shadow:none;" />
 
 ---
 
@@ -193,7 +193,7 @@ $ cf delete -f cf-hero
 ```nohighlight
 As a CF hero
 I want my app to be accessible at my domain
-So that everyone can see my Cloud Foundry Hero Certificate
+So that everyone can see my Cloud Foundry Hero App
 ```
 
 ---

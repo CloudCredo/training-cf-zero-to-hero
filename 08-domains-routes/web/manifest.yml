@@ -1,5 +1,6 @@
 name: cf-hero
-memory: 32M
-disk_quota: 128M
+memory: 64M
+disk_quota: 256M
 no-hostname: true
-domain: gerhard.cf-hero.cloudcredo.io
+# domain: YOUR-NAME.cf-hero.cloudcredo.io
+buildpack: ruby_buildpack
