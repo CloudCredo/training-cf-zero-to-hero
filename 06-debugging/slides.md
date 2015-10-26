@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [06 How do I debug my app?](#/0)
 
 > Gerhard Lazu

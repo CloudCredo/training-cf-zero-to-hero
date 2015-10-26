@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [07 Where does my app store state?](#/0)
 
 > Simon Jones

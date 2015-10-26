@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [03 How do I CF push my first app?](#/0)
 
 > Gerhard Lazu

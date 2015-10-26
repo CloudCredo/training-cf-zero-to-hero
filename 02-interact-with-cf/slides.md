@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [02 How do I interact with CF?](#/0)
 
 > Simon Jones

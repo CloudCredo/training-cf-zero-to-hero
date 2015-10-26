@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [01 What is Cloud Foundry?](#/0)
 
 > Colin Humphreys

@@ -1,4 +1,4 @@
-## Cloud Foundry for Beginners <br />From Zero To Hero
+## Cloud Foundry <br />From Zero To Hero
 ### [07 How do I use custom domains?](#/0)
 
 > Gerhard Lazu
