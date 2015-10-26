@@ -196,9 +196,7 @@ Randomly distributed across multiple app instances
 ```bash
 # From the training home directory:
 $ cd 03-first-app/worker
-$ cf push --no-start
-$ cf set-health-check worker-app none # disable Diego health-check
-$ cf start worker-app
+$ cf push
 ```
 
 ```bash

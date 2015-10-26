@@ -40,7 +40,7 @@ Note:
 
 [github.com/cloudfoundry/cli](https://github.com/cloudfoundry/cli#downloads)
 
-<img src="images/cf.cli.downloads.png" style="background:none; border:none; box-shadow:none;" />
+<img src="images/cf-cli-downloads.png" style="background:none; border:none; box-shadow:none;" />
 
 
 Note:
@@ -60,14 +60,13 @@ NAME:
    cf - A command line tool to interact with Cloud Foundry
 
 USAGE:
-   [env vars] cf [global opts] command [args...] [opts...]
+   [environment variables] cf [global options] command [arguments...
 
 VERSION:
-   6.12.4-b4b6af1-2015-09-18T17:54:54+00:00
+   6.13.0-e68ce0f-2015-10-15T22:53:29+00:00
 
 BUILD TIME:
-   2015-09-23 11:05:11.054932787 +0100 BST
-
+   2015-10-25 01:04:16.22807612 +0100 BST
 ...
 ```
 
