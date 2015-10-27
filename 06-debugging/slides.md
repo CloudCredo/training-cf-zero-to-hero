@@ -28,7 +28,7 @@ $ cf push
 
 ...
 
-urls: debug-app-unlanterned-eliminant.cfapps.io
+urls: debug-app-unerring-muddlehead.cfapps.io
 
 ...
 ```
@@ -74,8 +74,6 @@ $ cf restart debug-app
 ```
 
 <img src="images/200-index.png" style="background:none; border:none; box-shadow:none;" />
-
-> And now crash it!
 
 ---
 
@@ -142,9 +140,19 @@ Note:
 
 ---
 
-## 4. SSH [access](#/9)
+## 4. SSH [access](#/9)*
 
-> Not fully integrated into PWS yet
+```bash
+$ cf logout
+$ cf login -a api.run.pivotal.io -u YOUR-EMAIL-ADDRESS --sso
+# Use temp auth code from https://login.run.pivotal.io/passcode
+$ cf ssh debug-app
+```
+
+<img src="images/cf-ssh.png" style="background:none; border:none; box-shadow:none;" />
+
+Note:
+  Not publicly announced on PWS yet
 
 ---
 
