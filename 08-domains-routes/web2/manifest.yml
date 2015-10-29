@@ -5,3 +5,5 @@ instances: 4
 no-hostname: true
 # domain: YOUR-NAME.cf-hero.cloudcredo.io
 buildpack: staticfile_buildpack
+# Bluemix
+# buildpack: https://github.com/cloudfoundry/staticfile-buildpack

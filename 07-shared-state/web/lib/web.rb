@@ -19,7 +19,14 @@ VCAP_SERVICES = JSON.parse(ENV.fetch("VCAP_SERVICES", JSON.dump({
       password: nil,
       port: 6379,
     }
-  } ]
+  } ],
+  redis: [ {
+    credentials: {
+      hostname: "localhost",
+      password: nil,
+      port: 6379,
+    }
+  } ],
 })))
 
 if VCAP_SERVICES.has_key?("user-provided")
@@ -27,7 +34,7 @@ if VCAP_SERVICES.has_key?("user-provided")
     service.fetch("name").index("redis")
   end
 else
-  REDIS_SERVICES = Array(VCAP_SERVICES.fetch("rediscloud"))
+  REDIS_SERVICES = VCAP_SERVICES.select { |key, _| key.index("redis") }.values.first
 end
 
 REDIS_CREDENTIALS = OpenStruct.new(REDIS_SERVICES.first.fetch("credentials"))
