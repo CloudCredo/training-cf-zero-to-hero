@@ -257,7 +257,7 @@ Compare CF public services:
   * [IBM Bluemix](https://console.ng.bluemix.net/pricing/)
   * [Pivotal Web Services](https://run.pivotal.io/pricing)
 
-Compare CF architectures
+Compare CF architectures:
   * [Current generation](https://docs.cloudfoundry.org/concepts/architecture/) - DEA
   * [Next generation](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) - Diego
 
