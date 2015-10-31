@@ -13,7 +13,7 @@
 
   1. To discover Cloud Foundry
   1. To learn by doing, as a team
-  1. To become [Certified Cloud Foundry Heroes](#/1)
+  1. To become [Cloud Foundry Heroes](#/1)
 
 ---
 
