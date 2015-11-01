@@ -143,7 +143,7 @@ $ cf app static-app
 ## [On product](#/14) launch day
 
 ```bash
-$ cf scale static-app -i 64
+$ cf scale static-app -i 32
 ```
 
 ```bash
@@ -154,8 +154,8 @@ $ cf app static-app
 #1   starting   2015-11-02   0.0%   0 of  16M     0 of 64M
 #2   running    2015-11-02   0.0%   6.9M of 16M   33.5M of 64M
 ...
-#62   running   2015-11-02   0.0%   6.8M of 16M   33.5M of 64M
-#63   running   2015-11-02   0.0%   7M of 16M     33.6M of 64M
+#30   running   2015-11-02   0.0%   6.8M of 16M   33.5M of 64M
+#31   running   2015-11-02   0.0%   7M of 16M     33.6M of 64M
 ```
 
 ---
