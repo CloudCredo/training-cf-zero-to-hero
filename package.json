@@ -1,0 +1,15 @@
+{
+  "name": "cc-training",
+  "version": "1.0.1",
+  "author": {
+    "name": "CloudCredo",
+    "email": "info@cloudcredo.com",
+    "web": "http://www.cloudcredo.com/"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "dependencies": {
+    "reveal-md": "~0.0.23"
+  }
+}
