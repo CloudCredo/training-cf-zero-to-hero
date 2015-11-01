@@ -1,6 +1,7 @@
-name: cf-hero-slides
+name: slides
 buildpack: nodejs_buildpack
 command: reveal-md --port $PORT
 memory: 64M
+instances: 2
 no-hostname: true
 domain: slides.cf-hero.cloudcredo.io
