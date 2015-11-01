@@ -121,7 +121,7 @@ development
 $ cf space development
 
 development
-    Org:               cf-hero-simon
+    Org:               cf-hero
     Apps:              
     Domains:           
     Services:          
@@ -153,16 +153,16 @@ Account shared by one or more users for resource <br />quotas, applications, ser
 $ cf orgs
 
 name
-cf-hero-simon
+cf-hero
 ```
 
 ```bash
-$ cf org cf-hero-simon
+$ cf org cf-hero
 
-cf-hero-simon:
+cf-hero:
     domains:        
-    quota:          paid (10240M memory limit, Unlimited instance ..
-    spaces:         development
+    quota:          100GB:50free (102400M memory limit, Unlimited ..
+    spaces:         cf-hero
     space quotas:
 ```
 
@@ -191,9 +191,9 @@ paid           10G         unlimited      1000     unlimited
 
 ```nohighlight
 
-              . Org                   . cf-hero-simon
+              . Org                   . cf-hero
               |                       |
-              \-- Space               \-- development
+              \-- Space               \-- cf-hero
                  |                       |
                  |-- App 1               |-- web-app
                  \-- App 2               \-- worker-app
@@ -209,8 +209,8 @@ $ cf target
 
 API endpoint:   https://api.run.pivotal.io (API version: 2.36.0)
 User:           simon@cloudcredo.com
-Org:            cf-hero-simon
-Space:          development
+Org:            cf-hero
+Space:          cf-hero
 ```
 
 ---
