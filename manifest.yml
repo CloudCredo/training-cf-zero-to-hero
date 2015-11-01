@@ -1,5 +1,0 @@
-name: cc-training
-buildpack: nodejs_buildpack
-command: reveal-md --port $PORT
-memory: 64M
-random-route: true
