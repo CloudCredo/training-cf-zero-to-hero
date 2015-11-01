@@ -28,7 +28,7 @@ $ cf push
 
 ...
 
-urls: imperfect-app-subsatiric-diminution.cfapps.io
+urls: imperfect-app-votive-seeress.cfapps.io
 
 ...
 ```

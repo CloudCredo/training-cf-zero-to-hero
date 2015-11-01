@@ -28,7 +28,7 @@ $ cf push
 
 ...
 
-urls: web-app-uninterchangeable-enrichment.cfapps.io
+urls: web-app-unpassionate-eighteen.cfapps.io
 
 ...
 ```
@@ -46,7 +46,7 @@ Note:
 $ cf apps
 
 name      state     instances   memory   disk   urls
-web-app   started   1/1         32M      256M   web-app-uninterch...
+web-app   started   1/1         32M      256M   web-app-unpass...
 ```
 
 ---
@@ -59,7 +59,7 @@ $ cf app web-app
 requested state: started
 instances: 1/1
 usage: 32M x 1 instances
-urls: web-app-uninterchangeable-enrichment.cfapps.io
+urls: web-app-unpassionate-eighteen.cfapps.io
 last uploaded: Mon Nov 2 10:18:05 UTC 2015
 stack: cflinuxfs2
 buildpack: ruby 1.6.7
@@ -93,14 +93,14 @@ buildpack: ruby_buildpack
 
 ## [What does ](#/7) random route [do?](#/7)
 
-`cfapps.io` is shared by all CF [run.pivotal.io](https://run.pivotal.io/) apps
+`cfapps.io` is shared by all [run.pivotal.io](https://run.pivotal.io/) apps
 
 ```bash
 $ cf app web-app
 
 ...
 
-urls: web-app-uninterchangeable-enrichment.cfapps.io
+urls: web-app-unpassionate-eighteen.cfapps.io
 
 ...
 ```
