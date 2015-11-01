@@ -82,7 +82,7 @@ A Cloud Foundry component that <br />resolves your app's runtime dependencies
 
 ---
 
-## 1. [Default buildpacks](#/9)
+## 1. [Default](#/9) buildpacks
 
 ```bash
 $ cf buildpacks
@@ -101,20 +101,20 @@ binary_buildpack       9          binary_buildpack-cached-v1.0.1
 
 ---
 
-## 2. [Community buildpacks](#/10)
+## 2. [Community](#/10) buildpacks
 
 [github.com/cloudfoundry-community](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki/Buildpacks)
 
 ---
 
-## 3. [Heroku buildpacks](#/11)
+## 3. [Heroku](#/11) buildpacks
 
   * CF buildpacks are based on them
   * They are interchangeable* (mostly)
 
 ---
 
-## 4. [Custom buildpacks](#/12)
+## 4. [Custom](#/12) buildpacks
 
   * Your own language deserves its own buildpack
   * As simple or as complicated as you want
