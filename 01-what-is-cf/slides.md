@@ -35,7 +35,7 @@
 
 ---
 
-## [If you really want to learn,](#/3) <br /> ask questions!
+## [If you really want to learn,](#/3) <br /> ask questions
 
 > Questions cannot be stupid. Answers can.
 
@@ -57,19 +57,23 @@
 
 ---
 
-## [If you need an](#/7) extra challenge
+## [Online](#/7) slides
 
-### [Become a](#/7) CF Superhero
-
----
-
-## [Everyone ready?](#/8)
-
-### Let's start for real now
+http://slides.cf-hero.cloudcredo.io
 
 ---
 
-## [What is](#/9) Cloud Foundry[?](#/9)
+## [If you need an](#/8) extra challenge
+
+### [Become a](#/8) CF Superhero
+
+---
+
+## [Everyone](#/9) ready[?](#/9)
+
+---
+
+## [What is](#/10) Cloud Foundry[?](#/10)
 
   * An open _Platform as a Service_ (_PaaS_)
   * Fast and easy to build, test, deploy &amp; scale apps
@@ -87,7 +91,7 @@ Note:
 
 ---
 
-## [What is](#/10) Platform as a Service[?](#/10)
+## [What is](#/11) Platform as a Service[?](#/11)
 
   * <span style="color: #8FF541;">Cloud Computing</span> characterised as **IaaS**, **PaaS**, and **SaaS**
   * Applications are the **PaaS** unit of currency
@@ -100,7 +104,7 @@ Note:
 
 ---
 
-## [Why](#/11) Platform as a Service[?](#/11)
+## [Why](#/12) Platform as a Service[?](#/12)
 
   * Deliver business value quickly
   * Focus on what matters for your business
@@ -116,7 +120,7 @@ Note:
 
 ---
 
-## [Cloud Foundry](#/12) Foundation
+## [Cloud Foundry](#/13) Foundation
 
   * EMC
   * HP
@@ -131,7 +135,7 @@ Note:
 
 ---
 
-## [How many](#/13) types [of CF?](#/13)
+## [How many](#/14) types [of CF?](#/14)
 
   1. Open Source Software
   1. Vendored Distribution
@@ -140,7 +144,7 @@ Note:
 
 ---
 
-## 1. [Open Source Software](#/14)
+## 1. [Open Source Software](#/15)
 
   * [github.com/cloudfoundry](https://github.com/cloudfoundry)
   * **cf-release** requires [BOSH](https://bosh.io/docs) knowledge
@@ -158,7 +162,7 @@ Note:
 
 ---
 
-## 2. [Vendored Distribution](#/15)
+## 2. [Vendored Distribution](#/16)
 
   * Pivotal Cloud Foundry
   * HP Helion Development Platform
@@ -175,7 +179,7 @@ Note:
 
 ---
 
-## 3. [Private Service](#/16)
+## 3. [Private Service](#/17)
 
   * CloudCredo Platform
   * IBM Bluemix Dedicated
@@ -197,7 +201,7 @@ Note:
 
 ---
 
-## 4. [Public Service](#/17)
+## 4. [Public Service](#/18)
 
   * Anynines
   * Swisscom
@@ -217,7 +221,7 @@ Note:
 
 ---
 
-# [Feature](#/18)
+# [Feature](#/19)
 
 ```nohighlight
 As a CF hero
@@ -227,9 +231,7 @@ So that I don't have to worry about infrastructure ever again
 
 ---
 
-<img src="images/run.pivotal.io.png" style="background:none; border:none; box-shadow:none;" />
-
-> **cf-hero-YOUR-NAME** org format
+<img src="images/pws-console.png" style="background:none; border:none; box-shadow:none;" />
 
 ---
 
@@ -243,7 +245,7 @@ So that I don't have to worry about infrastructure ever again
 
 ---
 
-## [Any](#/21) questions?
+## [Any](#/22) questions?
 
 > Questions cannot be stupid. Answers can.
 
