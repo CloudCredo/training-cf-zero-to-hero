@@ -1,0 +1,39 @@
+#!/bin/bash -e
+
+[ -z "$DEBUG" ] || set -x
+
+TMP_DIR="$(mktemp -d -t cf-zero-to-hero-slides)"
+cleanup() {
+  rm -fr "$TMP_DIR"
+}
+
+trap cleanup EXIT
+
+main() {
+  copy_topics
+  copy_app_files
+  cleanse_slides_app
+  deploy
+}
+
+copy_topics() {
+  cp -fr 0* "$TMP_DIR"
+}
+
+copy_app_files() {
+  cp slides/* "$TMP_DIR"
+}
+
+cleanse_slides_app() {
+  find "$TMP_DIR" -mindepth 2 -maxdepth 2 \
+    -not \( -name slides.md -o -name reveal.json -o -name images \) \
+      -exec rm -fr {} \;
+}
+
+deploy() {
+  pushd "$TMP_DIR" >/dev/null
+    cf p
+  popd >/dev/null
+}
+
+main
