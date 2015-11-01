@@ -21,12 +21,12 @@ copy_topics() {
 }
 
 copy_app_files() {
-  cp slides/* "$TMP_DIR"
+  cp slides/* reveal.json "$TMP_DIR"
 }
 
 cleanse_slides_app() {
   find "$TMP_DIR" -mindepth 2 -maxdepth 2 \
-    -not \( -name slides.md -o -name reveal.json -o -name images \) \
+    -not \( -name slides.md -o -name images \) \
       -exec rm -fr {} \;
 }
 
