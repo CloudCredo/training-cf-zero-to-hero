@@ -12,7 +12,7 @@ Note:
 
 ---
 
-## [Cloud Foundry Hero](#/2) App
+## [Cloud Foundry Hero](#/2) Badge
 
 > Outstanding Cloud Foundry Knowledge
 
@@ -27,7 +27,7 @@ Note:
 ```nohighlight
 As a CF hero
 I want my app to be accessible at my domain
-So that everyone can see my Cloud Foundry Hero App
+So that everyone can see my Cloud Foundry Hero Badge
 ```
 
 ---
