@@ -47,11 +47,10 @@ Everyone wants to use your new app, but...
 
 ## [It randomly](#/4) crashes
 
-Like all apps, it's good enough (not perfect)
+> _Version 1 Sucks, But Ship It Anyway_
 
 <img src="images/crash.png" style="background:none; border:none; box-shadow:none;" />
 
-> _Version 1 Sucks, But Ship It Anyway_
 
 Note:
   [Coding Horror wisdom](http://blog.codinghorror.com/version-1-sucks-but-ship-it-anyway/)
