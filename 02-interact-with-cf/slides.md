@@ -17,13 +17,11 @@ So that I can deploy apps into my CF account
 
 ---
 
-## [How do I interact with](#/2) CF[?](#/2)
+## [How do I](#/2) interact with CF[?](#/2)
 
-### From Terminal, with CF CLI 
+From Command Prompt / Terminal
 
-  * Use installer for your OS
-  * 32/64 bit support
-  * A single binary
+With CF CLI utility
 
 Note:
   The CF CLI utility communicates with the Cloud Controller, a CF component, that exposes a RESTful API
@@ -34,7 +32,7 @@ Note:
 
 ---
 
-## [Install the](#/3) CF CLI
+## [How do I](#/3) install the CF CLI[?](#/3)
 
 [github.com/cloudfoundry/cli](https://github.com/cloudfoundry/cli#downloads)
 
@@ -50,7 +48,7 @@ Note:
 
 ---
 
-## [Did](#/4) CF CLI [install correctly?](#/4)
+## [Did](#/4) CF CLI install [correctly?](#/4)
 
 ```bash
 $ cf
@@ -77,7 +75,7 @@ Note:
 
 ---
 
-## [How do I log into](#/5) CF[?](#/5)
+## [How do I](#/5) log into CF[?](#/5)
 
 ```bash
 $ cf login -a api.run.pivotal.io -u YOUR-EMAIL-ADDRESS
@@ -112,11 +110,12 @@ Every application and service is scoped to a space
 ```bash
 $ cf spaces
 
-development
+slides
+training
 ```
 
 ```bash
-$ cf space development
+$ cf space training
 
 development
     Org:               cf-hero
@@ -160,7 +159,7 @@ $ cf org cf-hero
 cf-hero:
     domains:        
     quota:          100GB:50free (102400M memory limit, Unlimited ..
-    spaces:         cf-hero
+    spaces:         slides, training
     space quotas:
 ```
 
@@ -191,7 +190,7 @@ paid           10G         unlimited      1000     unlimited
 
               . Org                   . cf-hero
               |                       |
-              \-- Space               \-- cf-hero
+              \-- Space               \-- training
                  |                       |
                  |-- App 1               |-- web-app
                  \-- App 2               \-- worker-app
@@ -208,7 +207,7 @@ $ cf target
 API endpoint:   https://api.run.pivotal.io (API version: 2.36.0)
 User:           gerhard@cloudcredo.com
 Org:            cf-hero
-Space:          cf-hero
+Space:          training
 ```
 
 ---
@@ -242,7 +241,7 @@ So that I can deploy apps into my CF account
 
 # CF SUPERHERO
 
-  * Add the person next to you to your PWS org &amp; space
+  * Add the person next to you to your PWS space
   * Create an account on [IBM Bluemix](https://console.ng.bluemix.net/registration/)
   * Use [Targets cf cli plugin](https://github.com/guidowb/cf-targets-plugin) with PWS &amp; Bluemix
   * Submit a localisation pull request to [cf cli](https://github.com/cloudfoundry/cli/blob/master/cf/i18n/README-i18n.md)
