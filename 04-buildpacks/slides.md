@@ -80,7 +80,7 @@ A Cloud Foundry component that <br />resolves your app's runtime dependencies
 
 ---
 
-## 1. [Default](#/9) buildpacks
+## [1.](#/9) Default [buildpacks](#/9)
 
 ```bash
 $ cf buildpacks
@@ -99,27 +99,27 @@ binary_buildpack       9          binary_buildpack-cached-v1.0.1
 
 ---
 
-## 2. [Community](#/10) buildpacks
+## [2.](#/10) Community [buildpacks](#/10)
 
 [github.com/cloudfoundry-community](https://github.com/cloudfoundry-community/cf-docs-contrib/wiki/Buildpacks)
 
 ---
 
-## 3. [Heroku](#/11) buildpacks
+## [3.](#/11) Heroku [buildpacks](#/11)
 
   * CF buildpacks are based on them
   * They are interchangeable* (mostly)
 
 ---
 
-## 4. [Custom](#/12) buildpacks
+## [4.](#/12) Custom [buildpacks](#/12)
 
   * Your own language deserves its own buildpack
   * As simple or as complicated as you want
 
 ---
 
-## [Static website](#/13) buildpack
+## Static [buildpack](#/13)
 
 ```bash
 # From the training home directory:
@@ -138,7 +138,7 @@ $ cf app static-app
 
 ---
 
-## [On product](#/14) launch day
+## Scale app [with ease](#/14)
 
 ```bash
 $ cf scale static-app -i 32
