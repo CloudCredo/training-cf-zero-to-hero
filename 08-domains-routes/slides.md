@@ -164,7 +164,7 @@ $ vim manifest.yml
 
 ```bash
 $ cf push
-$ cf app cf-hero2
+$ cf app cf-hero-static
 
      state     since        cpu    memory        disk
 #0   running   2015-11-02   0.0%   6.8M of 16M   33.6M of 64M
@@ -184,7 +184,7 @@ $ cf delete -f cf-hero
 
 <br />
 
-<img src="images/cf-hero2.png" style="background:none; border:none; box-shadow:none;" />
+<img src="images/cf-hero-static.png" style="background:none; border:none; box-shadow:none;" />
 
 ---
 

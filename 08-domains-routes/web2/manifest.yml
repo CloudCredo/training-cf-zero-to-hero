@@ -1,4 +1,4 @@
-name: cf-hero2
+name: cf-hero-static
 memory: 16M
 disk_quota: 64M
 instances: 4
