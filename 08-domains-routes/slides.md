@@ -40,7 +40,7 @@ $ cf create-domain cf-hero-YOUR-NAME YOUR-NAME.cf-hero.cloudcredo.io
 
 ```bash
 # From the training home directory:
-$ cd 08-domains-routes/web
+$ cd 08-domains-routes/cf-hero
 # Uncomment domain & replace YOUR-NAME
 $ vim manifest.yml
 ```
@@ -155,7 +155,7 @@ $ cf delete -f -r cf-superhero
 
 ```bash
 # From the training home directory:
-$ cd 08-domains-routes/web2
+$ cd 08-domains-routes/cf-hero-static
 # Replace YOUR-NAME
 $ vim public/index.html
 # Uncomment domain & replace YOUR-NAME

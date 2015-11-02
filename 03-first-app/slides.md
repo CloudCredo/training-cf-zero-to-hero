@@ -23,7 +23,7 @@ So that the whole world can see it
 
 ```bash
 # From the training home directory:
-$ cd 03-first-app/web
+$ cd 03-first-app/web-app
 $ cf push
 
 ...
@@ -195,7 +195,7 @@ Randomly distributed across multiple app instances
 
 ```bash
 # From the training home directory:
-$ cd 03-first-app/worker
+$ cd 03-first-app/worker-app
 $ cf push
 ```
 

@@ -83,7 +83,7 @@ redis   rediscloud   30mb                create succeeded
 
 ```bash
 # From the training home directory:
-$ cd 07-shared-state/web
+$ cd 07-shared-state/stateful-app
 $ cf push --no-start
 ```
 
@@ -170,7 +170,7 @@ We quickly fix it, much to our users' delight.
 
 ```
 # From the training home directory:
-$ cd 07-shared-state/web
+$ cd 07-shared-state/stateful-app
 $ cf push --no-start
 $ cf set-env stateful-app SHOW_APP_SUPPORTERS true
 $ cf start stateful-app

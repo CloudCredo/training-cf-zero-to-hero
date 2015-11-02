@@ -125,7 +125,7 @@ binary_buildpack       9          binary_buildpack-cached-v1.0.1
 
 ```bash
 # From the training home directory:
-$ cd 04-buildpacks/web
+$ cd 04-buildpacks/static-app
 $ cf push
 ```
 

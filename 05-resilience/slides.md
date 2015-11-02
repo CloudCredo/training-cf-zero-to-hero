@@ -23,7 +23,7 @@ So that random failures won't take it offline
 
 ```bash
 # From the training home directory:
-$ cd 05-resilience/web
+$ cd 05-resilience/imperfect-app
 $ cf push
 
 ...

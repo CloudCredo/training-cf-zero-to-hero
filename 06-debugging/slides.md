@@ -23,7 +23,7 @@ So that I can debug it
 
 ```bash
 # From the training home directory:
-$ cd 06-debugging/web
+$ cd 06-debugging/debug-app
 $ cf push
 
 ...
@@ -114,7 +114,7 @@ $ cf env debug-app
 
 ```bash
 # From the training home directory:
-$ cd 06-debugging/web
+$ cd 06-debugging/debug-app
 # Replace YOUR-LICENSE-KEY
 $ vim newrelic.yml
 ```
