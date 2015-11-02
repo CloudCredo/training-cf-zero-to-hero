@@ -54,7 +54,7 @@ Note:
 
 ---
 
-## [I want](#/4) multiple routes <br />[pointing to the same app](#/3)
+## [I want](#/4) multiple routes <br />pointing to the same app
 
 ```bash
 $ cf map-route cf-hero gerhard.cf-hero.cloudcredo.io -n www
@@ -71,7 +71,7 @@ cf-hero  ..  gerhard.cf-hero.cloudcredo.io, www.gerhard.cloudcredo..
 
 ---
 
-## [I also want](#/5) multiple domains <br />[pointing to the same app](#/5)
+## [I also want](#/5) multiple domains <br />pointing to the same app
 
 ```bash
 $ cf domains
@@ -149,7 +149,7 @@ $ cf delete -f -r cf-superhero
 
 ---
 
-## [You find](#/8) <br />the best app version
+## [When you find](#/8) <br />the best app version
 
 ```bash
 # From the training home directory:
@@ -191,7 +191,7 @@ $ cf delete -f cf-hero
 ```nohighlight
 As a CF hero
 I want my app to be accessible at my domain
-So that everyone can see my Cloud Foundry Hero App
+So that everyone can see my Cloud Foundry Hero Badge
 ```
 
 ---
