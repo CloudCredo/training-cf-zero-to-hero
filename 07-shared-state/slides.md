@@ -62,7 +62,7 @@ sendgrid         free, bronze*,  ..  Email Delivery. Simplified.
 
 ---
 
-## [I want a](#/5) Redis [instance](#/5)
+## [I want a](#/5) Redis service instance
 
 ```bash
 $ cf create-service rediscloud 30mb redis
@@ -77,7 +77,7 @@ redis   rediscloud   30mb                create succeeded
 
 ---
 
-## [I want my app to](#/6) store state <br />[in this Redis instance](#/6)
+## [I want my app to](#/6) store state <br />in this Redis service instance
 
 ```bash
 # From the training home directory:
@@ -105,7 +105,7 @@ Note:
 
 ---
 
-## [Are all app instances <br />using the](#/7) same Redis[?](#/7)
+## [Are](#/7) all app instances <br />using the same Redis[?](#/7)
 
 ```bash
 $ cf scale stateful-app -i 2
@@ -115,7 +115,7 @@ $ cf scale stateful-app -i 2
 
 ---
 
-## [How are](#/8) service details [exposed to apps?](#/8)
+## [How are](#/8) service details exposed to apps[?](#/8)
 
 ```bash
 $ cf env stateful-app
@@ -145,7 +145,7 @@ pub-redis-15708.us-east-1-4.6.ec2.redislabs.com:15708> exit
 
 ---
 
-## [Let's iterate on](#/9) user feedback
+## [Let's](#/9) iterate on user feedback
 
 ```bash
 $ cf set-env stateful-app SHOW_APP_SUPPORTERS true
@@ -156,15 +156,15 @@ $ cf restart stateful-app
 
 ---
 
-## CEO [plays with CF CLI](#/10)
+## App gets deleted [by mistake](#/10)
 
-Our app gets deleted. By mistake, obviously.
+What actually happened: the CEO clicked some links.
 
 ```bash
 $ cf delete -f -r stateful-app
 ```
 
-We quickly fix it, much to our users' delight.
+We restore the app, much to our users' delight.
 
 ```
 # From the training home directory:
