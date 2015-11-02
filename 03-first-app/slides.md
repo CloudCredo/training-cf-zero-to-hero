@@ -17,7 +17,7 @@ So that the whole world can see it
 
 ---
 
-## [How do I](#/2) push [my app into CF?](#/2)
+## [How do I](#/2) push my app [into CF?](#/2)
 
 ```bash
 # From the training home directory:
@@ -140,20 +140,20 @@ Note:
 ## [What happens when I](#/9) cf push[?](#/9)
 
 1. App files sent to CF
-1. Runnable app artefact is created (staging)
+1. Runnable app artefact is created (droplet)
 1. App starts on an app host
 
 <hr />
 
-Requests are sent to app (if a web app)
+App receives web requests (if it binds to TCP port)
 
 ---
 
-## 1. [App files sent to CF](#/10)
+## [1.](#/10) App files [sent to CF](#/10)
 
 By the `cf` cli, no other dependency required
 
-[`.cfignore`](https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html#exclude) (only send what is needed)
+Define in [`.cfignore`](https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html#exclude) files that should not be sent
 
 Note:
   cf cli sent all our app files to the Cloud Controller
@@ -164,7 +164,7 @@ Note:
 
 ---
 
-## 2. [Runnable](#/11) app artefact
+## [2. Runnable](#/11) app artefact
 
 App Files + Runtime Dependencies = App Artefact
 
@@ -177,19 +177,19 @@ Note:
 
 ---
 
-## 3. App starts [on an app host](#/12)
+## [3.](#/12) App starts [on an app host](#/12)
 
 If it's a web process, it binds to a TCP port
 
 ---
 
-## Requests [are sent to app](#/13)
+## [App receives](#/13) web requests
 
 Randomly distributed across multiple app instances
 
 ---
 
-## [How do I push a](#/14) worker app[?](#/14)
+## [How do I](#/14) push a worker app[?](#/14)
 
 ```bash
 # From the training home directory:
@@ -214,7 +214,7 @@ buildpack: binary_buildpack
 
 ---
 
-## [How can I check what this](#/15) worker app [does?](#/15)
+## [How can I](#/15) check what this worker app does[?](#/15)
 
 ```bash
 $ cf logs worker-app --recent
@@ -228,10 +228,6 @@ $ cf logs worker-app --recent
 2015... [App/0] ERR + suspend_myself
 2015... [App/0] ERR + kill -STOP 11
 ```
-
-  * Finds the public IP of the gateway host
-  * Writes it to STDOUT
-  * Suspends itself
 
 ---
 
