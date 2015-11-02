@@ -1,4 +1,6 @@
-Training materials for **Cloud Foundry for Beginners: from Zero to Hero**
+Training materials for **Cloud Foundry for Beginners: from Zero to Hero** 
+
+http://slides.cf-hero.cloudcredo.io
 
 ## Summary
 
@@ -15,12 +17,13 @@ rather than infrastructure plumbing, this is the right course for you.
 
 ## System Requirements
 
-* Linux 32/64bit, Windows 32/64bit or OS X 64bit
+* Linux, Windows or OS X (all 64bit)
 * 1GB of FREE RAM
 * USB port for mounting the USB drive with course material
 * code editor of choice
+* [git](https://git-scm.com/downloads) client installed with Command Prompt / Terminal support
 
-## reveal.js shortcuts
+## Slides shortcuts
 
 * `Up`, `Down`, `Left`, `Right`: Navigation
 * `f`: Full-screen
@@ -29,7 +32,7 @@ rather than infrastructure plumbing, this is the right course for you.
 * `.` (`Period` or `b`: Turn screen black)
 * `Esc`: Escape from full-screen, or toggle overview
 
-## Viewing the slides
+## Running slides locally
 
 Once [node.js is installed](https://nodejs.org/en/download/), from your
 terminal, install reveal-md globally: `npm install -g reveal-md`
