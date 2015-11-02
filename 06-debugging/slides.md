@@ -17,7 +17,7 @@ So that I can debug it
 
 ---
 
-## [Let's push a](#/2) 500 [app](#/2)
+## [Push](#/2) a buggy app
 
 ```bash
 # From the training home directory:
@@ -35,11 +35,11 @@ urls: debug-app-unerring-muddlehead.cfapps.io
 
 ---
 
-## [How do I](#/3) debug [my app?](#/3)
+## [How do I](#/3) debug my app[?](#/3)
 
 1. App logs
 1. App events
-1. Buildpack support
+1. App instrumentation
 1. SSH access*
 
 Note:
@@ -47,7 +47,7 @@ Note:
 
 ---
 
-## 1. [App](#/4) logs
+## [1. App](#/4) logs
 
 ```bash
 $ cf logs debug-app --recent
@@ -59,12 +59,12 @@ $ cf logs debug-app --recent
 ```
 
 ```bash
-$ cf logs debug-app # TAILS APP LOGS, CTRL + C to exit
+$ cf logs debug-app # Tails app logs, CTRL + C to exit
 ```
 
 ---
 
-## [Let's](#/5) fix [the app](#/5)
+## [Let's](#/5) fix the app
 
 ```bash
 $ cf set-env debug-app FIXED true
@@ -75,7 +75,7 @@ $ cf restart debug-app
 
 ---
 
-## 2. [App](#/6) events
+## [2. App](#/6) events
 
 ```bash
 $ cf events debug-app
@@ -85,14 +85,12 @@ $ cf events debug-app
 ...
 ```
 
-> App will be automatically restarted, <br />no RESTARTED event is logged
-
 Note:
   Notice that the most recent event is at the top
 
 ---
 
-## 3. [Buildpack support](#/7)
+## [3. App](#/7) instrumentation
 
 * New Relic
 * AppDynamics
@@ -101,7 +99,7 @@ Note:
 
 ---
 
-## New Relic [without <br />buildpack support](#/8)
+## [New Relic](#/8) instrumentation
 
 ```bash
 $ cf create-service newrelic standard newrelic
@@ -125,8 +123,6 @@ $ cf push
 $ cf service newrelic
 ```
 
-https://loadimpact.com/
-
 Note:
   Create a New Relic service instance
 
@@ -134,11 +130,11 @@ Note:
 
   Find New Relic Dashboard URL
 
-  Generate some load via LoadImpact
+  Generate some load
 
 ---
 
-## 4. SSH [access](#/9)*
+## [4.](#/9) SSH [access](#/9)*
 
 ```bash
 $ cf logout
