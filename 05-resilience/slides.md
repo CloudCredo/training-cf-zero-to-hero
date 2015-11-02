@@ -35,7 +35,7 @@ urls: imperfect-app-votive-seeress.cfapps.io
 
 ---
 
-## [You've](#/3) shipped [your new app!](#/3)
+## You've shipped [your new app!](#/3)
 
 The static website is handling the traffic wonderfully
 
@@ -43,7 +43,7 @@ Everyone wants to use your new app, but...
 
 ---
 
-## [It randomly](#/4) crashes
+## [It](#/4) crashes
 
 > _Version 1 Sucks, But Ship It Anyway_
 
@@ -55,7 +55,7 @@ Note:
 
 ---
 
-## [How to make an <br />imperfect app](#/5) resilient[?](#/5)
+## [How to](#/5) make an app resilient[?](#/5)
 
 Embrace failure &amp; run many instances of the same app
 
@@ -65,10 +65,6 @@ $ cf apps
 
 name            state     instances   memory   disk   urls
 imperfect-app   started   2/3         64M      256M   imperfect..
-```
-
-```bash
-$ watch cf apps # WATCH APP SCALE IN REAL-TIME
 ```
 
 Note:
@@ -84,7 +80,7 @@ Note:
 
 ---
 
-## [Many crashed instances, <br />app still](#/6) available
+## [Many crashed instances,](#/6) <br />app still available
 
 ```bash
 $ cf app imperfect-app
@@ -95,13 +91,19 @@ $ cf app imperfect-app
 #2   down      2015-11-02  0.0%   0 of 0         0 of 0
 ```
 
+```bash
+$ watch cf apps # Watch app instances restart in real-time
+```
+
 <img src="images/index.png" style="background:none; border:none; box-shadow:none;" />
 
 ---
 
-## [What](#/7) restarts [crashed apps?](#/7)
+## [What](#/7) restarts crashed apps[?](#/7)
 
-Health Check in Diego, Health Manager in DEA (a.k.a. [HM9K](https://docs.cloudfoundry.org/concepts/architecture/#hm9k))
+Health Manager in DEA v2 (a.k.a. [HM9K](https://docs.cloudfoundry.org/concepts/architecture/#hm9k))
+
+Health Check in Diego v3
 
 Note:
   When an app instance crashes, the Health Manager dubbed HM9K will notice this and restart the app instance
@@ -109,8 +111,6 @@ Note:
 ---
 
 ## [My app needs](#/8) more memory
-
-Generous grace period if it exceeds the memory quota
 
 ```bash
 $ cf events imperfect-app
@@ -181,7 +181,7 @@ OPTIONS:
 
 ## [The](#/11) Twelve-Factor [App](#/11)
 
-<img src="images/12factor.png" style="background:none; border:none; box-shadow:none;" />
+<a href="http://12factor.net"><img src="images/12factor.png" style="background:none; border:none; box-shadow:none;" /></a>
 
 ---
 
