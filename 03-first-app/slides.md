@@ -173,7 +173,7 @@ Note:
   
   The majority of the output from a cf push is this staging phase
 
-  Colin will tell us more about Buildpacks in the next topic 
+  You will find more about Buildpacks in the next topic 
 
 ---
 
