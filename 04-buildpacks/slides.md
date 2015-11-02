@@ -65,7 +65,7 @@ A Cloud Foundry component that <br />resolves your app's runtime dependencies
 
   1. Developer pushes application
   1. Ordered list of buildpacks detect app compatibility
-  1. <span style="color: #8FF541;">Winning</span> buildpack runs compile and detect (staging)
+  1. <span style="color: #8FF541;">Winning</span> buildpack runs compile and release (staging)
   1. Resulting droplet is store in blobstore
   1. Droplets are deployed in containers for running apps
 
