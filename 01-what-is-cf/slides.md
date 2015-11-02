@@ -227,11 +227,11 @@ So that I don't have to worry about infrastructure ever again
 
 https://run.pivotal.io
 
-<img src="images/pws-index.png" style="background:none; border:none; box-shadow:none;" />
+<a href="https://run.pivotal.io"><img src="images/pws-index.png" style="background:none; border:none; box-shadow:none;" /></a>
 
 ---
 
-<img src="images/pws-console.png" style="background:none; border:none; box-shadow:none;" />
+<a href="https://console.run.pivotal.io"><img src="images/pws-console.png" style="background:none; border:none; box-shadow:none;" /></a>
 
 ---
 
