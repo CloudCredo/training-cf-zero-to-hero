@@ -1,5 +1,5 @@
 name: worker-app
-command: ./work
+command: sh -xe < ./work
 memory: 16M
 disk_quota: 64M
 no-route: true
