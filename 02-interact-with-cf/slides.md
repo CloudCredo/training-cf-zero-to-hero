@@ -206,7 +206,7 @@ paid           10G         unlimited      1000     unlimited
 $ cf target
 
 API endpoint:   https://api.run.pivotal.io (API version: 2.36.0)
-User:           simon@cloudcredo.com
+User:           gerhard@cloudcredo.com
 Org:            cf-hero
 Space:          cf-hero
 ```
