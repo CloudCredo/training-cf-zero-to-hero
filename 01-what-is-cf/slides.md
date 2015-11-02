@@ -260,8 +260,8 @@ Compare CF public services:
   * [Pivotal Web Services](https://run.pivotal.io/pricing)
 
 Compare CF architectures:
-  * [Previous generation v2](https://docs.cloudfoundry.org/concepts/architecture/) - DEA
-  * [Current generation v3](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) - Diego
+  * [DEA v2](https://docs.cloudfoundry.org/concepts/architecture/)
+  * [Diego v3](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html)
 
 <p style="font-size: 50%; opacity: 0.2;">
   This content is copyright of CloudCredo. &copy; CloudCredo 2015. All rights reserved.
