@@ -1,8 +1,6 @@
 ## Cloud Foundry <br />From Zero To Hero
 ### [04 What are buildpacks?](#/0)
 
-> Colin Humphreys
-
 <p style="font-size: 50%; opacity: 0.2;">
   This content is copyright of CloudCredo. &copy; CloudCredo 2015. All rights reserved.
 </p>

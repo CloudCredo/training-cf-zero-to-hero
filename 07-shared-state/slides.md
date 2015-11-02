@@ -1,8 +1,6 @@
 ## Cloud Foundry <br />From Zero To Hero
 ### [07 Where does my app store state?](#/0)
 
-> Simon Jones
-
 <p style="font-size: 50%; opacity: 0.2;">
   This content is copyright of CloudCredo. &copy; CloudCredo 2015. All rights reserved.
 </p>
