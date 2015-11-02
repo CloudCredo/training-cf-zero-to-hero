@@ -39,15 +39,15 @@
 
 ---
 
-## [We will deliver](#/4) a feature [<br />with every topic](#/4)
+## [We will deliver](#/4) a feature [<br />with](#/4) every topic
 
 ---
 
-## [Why is the content being delivered by](#/5) a team [of people?](#/5)
+## [Why is the content being](#/5) delivered by a team [of people?](#/5)
 
 ---
 
-## [Content on](#/6) USB disk
+## [Content on](#/6) USB flash drive
 
   * Slides for you to follow along
   * Example apps
@@ -67,11 +67,7 @@ http://slides.cf-hero.cloudcredo.io
 
 ---
 
-## [Everyone](#/9) ready[?](#/9)
-
----
-
-## [What is](#/10) Cloud Foundry[?](#/10)
+## [What is](#/9) Cloud Foundry[?](#/9)
 
   * An open _Platform as a Service_ (_PaaS_)
   * Fast and easy to build, test, deploy &amp; scale apps
@@ -89,7 +85,7 @@ Note:
 
 ---
 
-## [What is](#/11) Platform as a Service[?](#/11)
+## [What is](#/10) Platform as a Service[?](#/10)
 
   * <span style="color: #8FF541;">Cloud Computing</span> characterised as **IaaS**, **PaaS**, and **SaaS**
   * Applications are the **PaaS** unit of currency
@@ -102,7 +98,7 @@ Note:
 
 ---
 
-## [Why](#/12) Platform as a Service[?](#/12)
+## [Why](#/11) Platform as a Service[?](#/11)
 
   * Deliver business value quickly
   * Focus on what matters for your business
@@ -118,7 +114,7 @@ Note:
 
 ---
 
-## [Cloud Foundry](#/13) Foundation
+## [Cloud Foundry](#/12) Foundation
 
   * EMC
   * HP
@@ -133,7 +129,7 @@ Note:
 
 ---
 
-## [How many](#/14) types [of CF?](#/14)
+## [How many](#/13) types of CF[?](#/13)
 
   1. Open Source Software
   1. Vendored Distribution
@@ -142,7 +138,7 @@ Note:
 
 ---
 
-## 1. [Open Source Software](#/15)
+## [1.](#/14) Open Source [Software](#/14)
 
   * [github.com/cloudfoundry](https://github.com/cloudfoundry)
   * **cf-release** requires [BOSH](https://bosh.io/docs) knowledge
@@ -160,7 +156,7 @@ Note:
 
 ---
 
-## 2. [Vendored Distribution](#/16)
+## [2.](#/15) Vendored [Distribution](#/15)
 
   * Pivotal Cloud Foundry
   * HP Helion Development Platform
@@ -177,7 +173,7 @@ Note:
 
 ---
 
-## 3. [Private Service](#/17)
+## [3.](#/16) Private [Service](#/16)
 
   * CloudCredo Platform
   * IBM Bluemix Dedicated
@@ -199,7 +195,7 @@ Note:
 
 ---
 
-## 4. [Public Service](#/18)
+## [4.](#/17) Public [Service](#/17)
 
   * Anynines
   * Swisscom
@@ -219,7 +215,7 @@ Note:
 
 ---
 
-# [Feature](#/19)
+# [Feature](#/18)
 
 ```nohighlight
 As a CF hero
@@ -249,7 +245,7 @@ So that I don't have to worry about infrastructure ever again
 
 ---
 
-## [Any](#/23) questions?
+## [Any](#/22) questions?
 
 > Questions cannot be stupid. Answers can.
 
@@ -264,8 +260,8 @@ Compare CF public services:
   * [Pivotal Web Services](https://run.pivotal.io/pricing)
 
 Compare CF architectures:
-  * [Current generation](https://docs.cloudfoundry.org/concepts/architecture/) - DEA
-  * [Next generation](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) - Diego
+  * [Previous generation v2](https://docs.cloudfoundry.org/concepts/architecture/) - DEA
+  * [Current generation v3](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) - Diego
 
 <p style="font-size: 50%; opacity: 0.2;">
   This content is copyright of CloudCredo. &copy; CloudCredo 2015. All rights reserved.
