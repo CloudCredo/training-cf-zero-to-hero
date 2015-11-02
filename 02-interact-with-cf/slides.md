@@ -19,7 +19,7 @@ So that I can deploy apps into my CF account
 
 ## [How do I](#/2) interact with CF[?](#/2)
 
-From Command Prompt / Terminal
+From Terminal / Command Prompt
 
 With CF CLI utility
 
