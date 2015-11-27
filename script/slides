@@ -31,8 +31,13 @@ cleanse_slides_app() {
 }
 
 deploy() {
+  local initial_space
+  initial_space="$(cf t | awk '/Space/ { print $2 }')"
+
   pushd "$TMP_DIR" >/dev/null
+    cf t -s slides
     cf p
+    cf t -s "$initial_space"
   popd >/dev/null
 }
 
