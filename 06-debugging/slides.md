@@ -40,10 +40,7 @@ urls: debug-app-unerring-muddlehead.cfapps.io
 1. App logs
 1. App events
 1. App instrumentation
-1. SSH access*
-
-Note:
-  Diego SSH not fully integrated into PWS
+1. SSH access
 
 ---
 
@@ -134,19 +131,13 @@ Note:
 
 ---
 
-## [4.](#/9) SSH [access](#/9)*
+## [4.](#/9) SSH [access](#/9)
 
 ```bash
-$ cf logout
-$ cf login -a api.run.pivotal.io -u YOUR-EMAIL-ADDRESS --sso
-# Use temp auth code from https://login.run.pivotal.io/passcode
 $ cf ssh debug-app
 ```
 
 <img src="images/cf-ssh.png" style="background:none; border:none; box-shadow:none;" />
-
-Note:
-  Not publicly announced on PWS yet
 
 ---
 
