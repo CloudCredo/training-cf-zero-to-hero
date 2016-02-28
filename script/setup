@@ -2,4 +2,5 @@
 
 [ -z "$DEBUG" ] || set -x
 
+brew install direnv
 npm install -g reveal-md
